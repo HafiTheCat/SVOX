@@ -42,5 +42,9 @@
 		"vox",
 		"MagicaVoxel",
 		"MagicaVoxel File Format"
-	]
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/f2hafner/SVOX"
+	}
 }
