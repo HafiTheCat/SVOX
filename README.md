@@ -2,43 +2,52 @@
 [![Smaller Vox files with SVOX](https://florian-hafner.eu/assets/svox.png)](https://www.npmjs.com/package/svox)
 
 
-<h1 style="text-align: center;">SVOX is a file format for storing voxel and palette data.</h1>
+<h1 style="text-align: center;">SVOX a fileformat for storing voxel based position and color data</h1>
 
 ---
 
-The **SVOX** file format is based on the MagicaVoxel's file format .vox which always includes the full color palette for any given amount of voxels. This can lead to the file containing unnecessary data *(since the whole range of colors in the palette is often not needed)* which can be especially impactful for transmitting smaller assets *(which are usually < 256 Voxels)*.
+The **SVOX** file format is based on MagicaVoxel's file format `.vox` which always includes the full color palette for any given amount of voxels. This can lead to the file containing unnecessary data *(since the whole range of colors in the palette is often not needed)*. It can be especially impactful for transmitting smaller assets *(which are usually < 256 Voxels)* over a network.
 
 ## Installation
 
-```bash
+```shell
+// With npm
 npm i svox
+
+// With yarn
+yarn add svox
+
+// With pnpm
+pnpm add svox
 ```
 
 ## Usage
-
 ```ts
 // CommonJS
 const SVOX = require('svox');
 
-// ES modules
+// ESModules
 import SVOX from 'svox';
 ```
 
 ```ts
-// Takes an existing SVOX binary file and parses it to a json containing the data of the file
+// Takes an existing ArrayBuffer containing SVOX data and parses it to an object
 SVOX.fromSVOX(file)
 
-// Takes an existing VOX binary file and parses it to a json containing the data of the file
+// Takes an existing ArrayBuffer containing VOX data and parses it to an object
 SVOX.fromVOX(file)
 
-// Takes an existing SVOXGroup consisting of voxel and palette entries converts it to SVOX binary data
+// Takes an existing Object consisting of voxel and palette entries and converts it to SVOX binary data
 SVOX.toSVOX(svoxGroup)
-
 ```
+
+## File structure
+
+The file structure can be found here: [check out filestructure](https://github.com/f2hafner/SVOX/blob/main/FileStructure.md)
 
 ## Changelog
 
-[Changelog (available at github)](./CHANGELOG.md)
+Check out the [Changelog](https://github.com/f2hafner/SVOX/blob/main/CHANGELOG.md)
 
 
 
