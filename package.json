@@ -1,6 +1,6 @@
 {
 	"name": "svox",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Interface for the svox file format",
 	"author": "f2hafner <f2hafner@edu.aau.at>",
 	"license": "MIT",
