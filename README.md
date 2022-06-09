@@ -2,7 +2,7 @@
 [![Smaller Vox files with SVOX](https://florian-hafner.eu/assets/svox.png)](https://www.npmjs.com/package/svox)
 
 
-<h2 style="text-align: center;">SVOX a fileformat for storing voxel based position and color data</h2>
+<h2 align="center">SVOX a fileformat for storing voxel based position and color data</h2>
 
 ---
 
