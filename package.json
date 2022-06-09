@@ -12,7 +12,7 @@
 		"start": "ts-node src/index.ts",
 		"test-watch": "vitest --watch",
 		"test-ui": "vitest --ui",
-		"test": "vitest",
+		"test": "vitest run",
 		"cov": "vitest run --coverage",
 		"build": "rimraf dist/index.* && rollup -c rollup.config.js"
 	},
